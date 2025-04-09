@@ -1,0 +1,4 @@
+<svg width="500" height="200">
+    <!-- Hier sollte nun die eigene Hexadezmalfarbe stehen, z.B. A3F401:-->
+    <circle r="50" cx="100" cy="100" fill="#A3F401"></circle>
+</svg>

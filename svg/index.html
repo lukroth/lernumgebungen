@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Tutorial</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscripts.js"></script>
+</head>
+<body>
+<h1>SVG Tutorial</h1>
+
+<h2>Kapitel 1: Grundelemente</h2>
+<p>Ein populäres Format zum Speichern von Vektorgrafiken ist das SVG (Scalable Vector Graphics) Format. SVG ist eine
+    Sprache, mit welcher man die geometrischen Objekte einer Grafik präzise beschreiben kann. Ein Kreis z.B. kann durch
+    den Radius, die Position des Mittelpunktes, die Farbe und Dicke des Umfangs und der Farbe der Kreisfläche
+    beschrieben werden. Damit das Ganze als korrektes SVG erkennt wird, muss der Kreis von einem SVG Tag umschlossen
+    werden. So weiss der Computer, dass nun SVG Elemente folgen. Hier ein Beispiel:
+<div class="exercise" data-title="Kreisfarbe"
+     data-description="Ein Kreis wird in SVG durch den TAG 'circle' definiert. Danach folgen in beliebiger Reihenfolge die Attribute Radius (r), X-Koordinate (cx) und Y-Koordinate (cy) des Mittelpunkts.
+
+        Ändere die Farbe des Kreises zu grün."
+     data-src="svg/circle_1.svg"
+     data-solution="true"></div>
+<div class="exercise" data-title="Kreisfarbe Hexadezimal"
+     data-description="Der Computer versteht natürlich auch Farbwerte, die Hexadezimal kodiert wurden. Suche mittels einens <a href='https://www.google.com/search?q=color+picker' target='_blank'>Color Pickers</a> eine Farbe heraus, die dir gefällt. Kopiere danach den Hexadezimalcode und füge ihn als Kreisfarbe ein. Der Hexadezimalwert muss immer mit dem # vornedran eingefügt werden. Hier ein Beispiel für die Farbe #DFFC03."
+     data-src="svg/circle_1_hex.svg"
+     data-solution="true"></div>
+<div class="exercise" data-title="Kreisgrösse"
+     data-description="Ändere die Grösse des Kreises. Neu soll der Kreis einen Radius von 200 haben.
+
+        Der Kreis passt so nicht mehr in das umschliessende SVG Bild, da dieses nur 500 x 200 gross ist. Ändere auch noch die Grösse und die Position des Kreises, so dass der Kreis ganz zu sehen ist."
+     data-src="svg/circle_2.svg"
+     data-solution="true"></div>
+<div class="exercise" data-title="Kreisposition"
+     data-description="Ändere die Position des Kreises, so dass er rechts unten im Bild ist statt links oben.
+
+        Achtung: Das Koordinatensystem ist bei SVG so, dass die Y Koorinate nach unten statt nach oben zeigt. Der Nullpunkt ist also links oben im Bild!"
+     data-src="svg/circle_3_position.svg"
+     data-solution="true"></div>
+<div class="exercise" data-title="Weitere Kreisattribute"
+     data-description="Alle Elemente, die Sie kennen lernen, haben noch viele weitere Attribute, mit welchen man die Eigenschaften der Elemente verändern kann. Informationen zu den Elementen finden Sie z.B. unter der folgenden Webseite: <a href='https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Element' target='_blank'>Link</a>.&#10;
+        Passen Sie den folgenden Kreis so an (ohne einen zweiten zu verwenden), dass er grün umrandet ist. Recherchieren Sie dazu falls nötig im Internet (Suchen Sie nach dem Attribut stroke und stroke-width:"
+     data-src="svg/circle_4_attribute.svg"
+     data-solution="true"></div>
+
+<div class="exercise" data-title="Kommentare"
+     data-description="SVG Unterstützt Kommentare. Diese werden vom Computer ignoriert und helfen nur den Menschen, den Code besser zu verstehen.
+
+        Hier ein Beispiel:"
+     data-src="svg/kommentare.svg"
+     data-solution="false"
+></div>
+
+<div class="exercise" data-title="XML Elemente schliessen"
+     data-description="In XML müssen alle Elemente korrekt geschlossen werden, um eine gültige Struktur zu gewährleisten. Dies kann entweder durch ein schließendes Tag oder durch ein selbstschließendes Tag erfolgen."
+     data-src="svg/xml_elemente_schliessen.svg"
+     data-solution="false"></div>
+
+<div class="exercise" data-title="Folgen nicht geschlossener XML Elemente"
+     data-description="Wenn Tags nicht korrekt geschlossen werden, erkennt der Computer den nachfolgenden Code nicht mehr korrekt und zeigt ihn nicht mehr an. Sie sehen im nachfolgenden Beispiel auf der linken Seite Warnungen (organe Ausrufezeigen): 'uncloased XML Attribute'&#10;
+        Ändere den SVG-Code so ab, dass alle Elemente korrekt geschlossen sind und danach alle 3 Kreise angezeigt werden:"
+     data-src="svg/xml_elemente_schliessen_2.svg"
+     data-solution="true"></div>
+
+<div class="exercise" data-title="Rechteck und Überlagerung"
+     data-description="Als nächstes Grundelement lernen Sie das Rechteck kennen.
+
+        Dann lernen Sie weiter, dass Elemente, die weiter unten im Code sind, über den schon angezeigten platziert werden. Wenn man also zwei Rechtecke anzeigt, und das Rote im Code weiter oben steht, kommt das zweite (grüne) vor das Rote.
+        Passen Sie den folgenden Code an, so dass er am Schluss eine Schweizerfahne anzeigt. Verwenden Sie dazu verschiedene übereinandergelagerte Rechtecke."
+     data-src="svg/rect_1.svg"
+     data-solution="true"></div>
+
+<div class="exercise" data-title="Text"
+     data-description="Buchsteben sind selbst auch Vektorgrafiken. Text (bestehend aus Buchstaben ;-)) kann folgendermassen hinzugefügt werden:"
+     data-src="svg/text.svg"
+     data-solution="false"></div>
+
+<div class="exercise" data-title="Elipse"
+     data-description="Eine Elipse ähnelt einem Kreis, hat im gegensatz zu einem Kreis aber unterschiedliche Radien in x- und y-Richtung:"
+     data-src="svg/elipse.svg"
+     data-solution="false"></div>
+
+<div class="exercise" data-title="Polyline"
+     data-description="Eine Polyline ist eine Linie, die mehrere Punkte verbindet. Die Punkte werden via das Attribut points gesetzt. Zuerst wird die x-Koordinate des ersten Punkts, danach ein Komma, danach die y-Koordinate des ersten Punkts gesetzt. Es folgt ein Abstand und wieder die x-Koordinate und y-Koordinate des zweiten Punkts usw.
+
+        Es kann gewählt werden, ob diese Figur danach ausgefüllt werden soll via dem fill Attribut.
+
+        Verändern Sie das folgende Beispiel, so dass danach das dreieck mit grüner Farbe ausgefüllt ist (fill Attribut), es aber keinen Strich mehr hat."
+     data-src="svg/polyline.svg"
+     data-solution="true"></div>
+
+
+
+
+
+<h2>Kapitel 2: Animationen</h2>
+<p>Hinweis: Es dauert teilweise ein wenig, bis die nun vorgestellten Animationen sich anfangen zu bewegen. Das ist in Ordnung und liegt am Browser (Chrome / Edge / Safari / ...) und nicht am Code. Haben Sie einfach ein wenig Geduld beim Programmieren.</p>
+<div class="exercise" data-title="Kreis Animation"
+     data-description="SVG Elemente können animiert werden. Dazu muss spezifiziert werden, welches Attribut von welchem Element animiert werden soll. Im Beispiel wird die X-Koordinate des Kreises (Attribut cx) und gleichzeitig auch noch der Radius (Attribut r) animiert.
+
+     Passen Sie das Beispiel so an, dass der Kreis von rechts nach links fliegt. Weiter soll der Hintergrund Blau sein. (Tipp: Fügen Sie ganz am Anfang ein sehr grosses, blaues Rechteck hinzu, dass als Hintergrund dient.)"
+     data-src="svg/animation_circle.svg"
+     data-solution="true"></div>
+
+
+
+
+
+<h2>Kapitel 3: Elemente zusammenfassen</h2>
+<div class="exercise" data-title="Komplexe Figur wiederverwenden und animieren: Symbol TAG"
+     data-description="Eine Komplexe Figur kann aus mehreren SVG Elementen bestehen. In diesem Beispiel wird ein Smiley aus mehreren Kreisen erstellt. Wenn man dieses Smiley nun mehrmals anzeigen und animieren möchte, dann kann man das, indem man das Smiley in einem Symbol Tag speichert.
+
+     Schauen Sie sich das folgende Beispiel an und versuchen Sie, den Code zu verstehen.
+
+     <h5>Aufgaben:</h5>
+     A) Was passiert, wenn Sie die Zeilen 15 und 17 weglöschen? Das Smiley sollte verschwinden, da das Symbol selbst nur das Smiley definiert, es aber nicht anzeigt. Analog zu einer Python Funktion, die mittels def nur definiert wird, aber nicht aufgerufen.
+     B) Passen Sie den Code so an,dass noch zwei weitere Smileys zu sehen sind."
+     data-src="svg/symbol_smiley.svg"
+     data-solution="true"></div>
+
+<div class="exercise" data-title="Smiley Animation"
+     data-description="Animieren Sie das SVG Smiley, indem sie die x-Koordinate des gesamten Smileys animieren. Dies können Sie, indem sie das x Attribut der use-Zeile (Zeile 12) animieren, analog zur früheren Animation mit dem Kreis."
+     data-src="svg/symbol_smiley_animiert.svg"
+     data-solution="true"></div>
+
+<div class="exercise" data-title="Group TAG"
+     data-description="Der Group Tag (&lt;g&gt;) in SVG ermöglicht es, mehrere Elemente zu einer Gruppe zusammenzufassen, sodass sie gemeinsam transformiert, gestylt oder animiert werden können. Im Unterschied zum symbol Tag erscheinen die Elemente aber direkt und es braucht kein use mehr!
+
+     In diesem Beispiel werden mehrere Kreise zu einer Gruppe zusammengefasst. Diese können nun direkt zusammen verschoben werden via das transform im group Tag.
+
+     Ändern Sie die Zahlen in Zeile 2 und verstehen Sie so den translate Befehl."
+     data-src="svg/group_circles.svg"
+     data-solution="false"></div>
+
+<div class="exercise" data-title="Rotierende Animation"
+     data-description="Eine Gruppe von Elementen kann als ganzes ebenfalls animiert werden. Hier möchten wir eine neue Form der Animation illustrieren: Elemente um einen Mittelpunkt kreisen lassen.
+
+     Dazu bekommt die Gruppe zuerst via das id Attribut einen Namen, hier z.B. 'sun'. Danach nutzen wir animateTransform, um dieses Gruppenelement um den Mittelpunkt (250/250) kreisen zu lassen, und zwar von 0 bis 360 Grad.
+
+     Passen Sie den Code so an, dass der Rotationsmittelpunkt neu unten in der Mitte des SVGs ist. So sieht es danach aus, als würde eine Sonne auf und wieder unter gehen."
+     data-src="svg/group_sun_animated_animatetransform.svg"
+     data-solution="true"></div>
+
+
+
+
+
+
+
+<h2>Kapitel 4: SVG Code via Python Code generieren</h2>
+<p>Wenn Sie sehr viele SVG Elemente erstellen möchten, z.B. eine Fensterfront eines Hochausses, dann müssen Sie häufig SVG Elemente Kopieren und jeweils nur z.B. die X-Koordinate anpassen. Damit das nicht von Hand gemacht werden muss, ist es möglich, Python Code zu schreiben, der das für einen erledigt.
+Das Ziel dieses Kapitels ist es also, Python Code zu schreiben, der SVG Code generiert. Dieser generierte SVG Code kann danach kopiert und verwendet werden.
+
+    Hier ein Beispielcode, der SVG Code (Rechtecke) generiert:
+</p>
+
+<!-- Use https://docs.webtigerpython.ethz.ch/url-arguments.html to create a link from this code:
+
+i = 0
+while i < 20:
+    print('<rect width="10" height="10" x="' + str(i*20) + '" y="50" fill="red" />')
+    i += 1
+ -->
+<iframe src="https://webtigerpython.ethz.ch/?layout=%5B%7B%22type%22%3A%20%22Editor%22%7D%2C%7B%22type%22%3A%20%5B%22Canvas%22%2C%22Console%22%5D%7D%5D&lang=en&full_screen=false&dark_mode=false&device=-&code=NobwRAdghgtgpmAXGGUCWEB0AHAnmAGjABMoAXKJMNAAgF4aAGAHQgHcALNAGzhtoA8NAEyNErGpJrYAThjIAKAOQCZcAMZkabNMTIc6zMAEYWYGhzhoA5hzKGTZmgA8HSmgGoaAZzIyFaABUogCUnjRKRjS4DgCsTgBmPNwOasRRAPQAfEohElK0HgzGrGAAvgC6QA%3D"
+        id="iframe"
+        width="100%"
+        height="500"
+        allow="usb;clipboard-write">
+</iframe>
+
+<div class="exercise" data-title="Python Code um SVG Code zu generieren"
+     data-description="Lassen Sie den obigen Code laufen, indem Sie auf den grünen Knopf drücken. Kopieren Sie den generierten SVG Code in diese Vorlage und versuchen Sie zu verstehen, weshalb dieser nun kopierte SVG Code generiert wurde und weshalb das Sinn ergeben kann, das zu nutzen."
+     data-src="svg/python_code_for_svg_code.svg"
+     data-solution="true"></div>
+</body>
+</html>

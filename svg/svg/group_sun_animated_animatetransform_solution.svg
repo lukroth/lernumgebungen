@@ -1,0 +1,16 @@
+<svg width="500" height="500">
+    <g id="sun2">
+        <!-- Hier muss cy angepasst werden -->
+        <circle cx="250" cy="280" r="30" fill="yellow"/>
+    </g>
+
+    <!-- Hier muss 2x 250 durch 500 ersetzt werden -->
+    <animateTransform
+            xlink:href="#sun2"
+            attributeName="transform"
+            type="rotate"
+            from="0 250 500"
+            to="360 250 500"
+            dur="10s"
+            repeatCount="indefinite"/>
+</svg>

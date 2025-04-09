@@ -1,0 +1,6 @@
+<svg width="500" height="200">
+    <circle cy="100" fill="green">
+        <animate attributeName="cx" from="0" to="500" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="r" from="100" to="0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+</svg>

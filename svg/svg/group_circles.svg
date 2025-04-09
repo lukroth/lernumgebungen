@@ -1,0 +1,7 @@
+<svg width="200" height="200">
+  <g transform="translate(50, 50)">
+    <circle cx="0" cy="0" r="40" fill="red"></circle>
+    <circle cx="100" cy="0" r="40" fill="blue"></circle>
+    <circle cx="50" cy="100" r="40" fill="green"></circle>
+  </g>
+</svg>
