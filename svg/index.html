@@ -133,7 +133,6 @@
      data-solution="true"></div>
 
 <div class="exercise" data-title="Transformationen kombinieren"
-     data-description="Die drei Transformationsarten rotieren, skalieren und verschieben können Sie auch miteinander verbinden und gleichzeitig auf eine Gruppe oder ein Element anwenden."
      data-description="Die drei Transformationsarten rotieren, skalieren und verschieben können Sie auch miteinander verbinden und gleichzeitig auf eine Gruppe oder ein Element anwenden. Dabei wird zuerst das angewendet, was ganz rechts steht (Hier 'translate(30 30)'), danach das nächste von rechts gelesene (hier 'scale(2)') usw."
      data-src="svg/transform.svg"
      data-solution="false"></div>
@@ -143,7 +142,7 @@
 
      Schauen Sie sich das folgende Beispiel an und versuchen Sie, den Code zu verstehen.
 
-     A) Was passiert, wenn Sie die Zeilen 15 und 17 weglöschen? <i>Lösung: Das Smiley wird verschwinden, da das Symbol selbst nur das Smiley definiert, es aber nicht anzeigt. Analog zu einer Python Funktion, die mittels def nur definiert wird, aber nicht aufgerufen.</i>
+     A) Was passiert, wenn Sie die Zeilen 15 und 17 weglöschen? <i>Lösung: Das Smiley wird verschwinden, da das Symbol selbst nur das Smiley definiert, es aber nicht anzeigt. Analog zu einer Python Funktion, die mittels def nur definiert, aber nicht aufgerufen wird.</i>
 
      B) Passen Sie den Code so an, dass noch zwei weitere Smileys unten drunter angezeigt werden."
 
@@ -153,7 +152,9 @@
 <div class="exercise" data-title="Komplexe Figur transformieren"
      data-description="Die zuvor gelernten Transformationen können Sie ebenfalls auf komplexe Figuren anwenden, welche Sie mit dem <i>symbol</i> Tag definiert haben. Dazu fügen Sie beim Aufrufen des Symbols das Attribut <i>transform</i> hinzu.
 
-        Fügen Sie ein zweites Smiley ein, welches halb so gross ist wie das erste und auf dem Kopf steht."
+        Fügen Sie ein zweites Smiley ein, welches halb so gross ist wie das erste und auf dem Kopf steht.
+
+        Tipp: Fügen sie das 'transform' Attribut zum 'use' TAG hinzu und nicht zum 'symbol' Tag"
 
      data-src="svg/symbol_smiley_transform.svg"
      data-solution="true"></div>
@@ -179,6 +180,7 @@
 
      Die Gruppe geben wir zuerst mit dem <i>id</i>-Attribut einen Namen, hier z.B. 'sun'. Danach nutzen wir animateTransform, um dieses Gruppenelement um den Mittelpunkt (250/250) kreisen zu lassen, und zwar von 0 bis 360 Grad.
 
+     Sonnen Auf- und Untergang:
      Passen Sie den Code so an, dass der Rotationsmittelpunkt neu unten in der Mitte des SVGs ist. Sie müssen zudem bei der Kreisdefinition cy anpassen, damit der Kreis weiter unten auf der Leinwand definiert wird. Die Lösung sollte dann so aussehen, als würde eine Sonne auf- und wieder untergehen."
      data-src="svg/group_sun_animated_animatetransform.svg"
      data-solution="true"></div>
