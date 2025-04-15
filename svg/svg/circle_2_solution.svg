@@ -1,3 +1,3 @@
-<svg width="500" height="500">
-    <circle r="200" cx="200" cy="200" fill="black"></circle>
+<svg width="500" height="300">
+    <circle r="150" cx="200" cy="150" fill="black"></circle>
 </svg>
