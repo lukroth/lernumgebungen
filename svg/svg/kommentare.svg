@@ -1,6 +1,6 @@
 <svg width="500" height="200">
-    <!-- alles hier ist ein Kommentar und wird vom Computer nicht gelesen.
+    <!-- Alles hier ist ein Kommentar und wird vom Computer nicht gelesen.
 
-    Bis man den Kommentar wieder schliesst mit den folgenden drei Zeichen: -->
+    Der Kommentar endet erst, wenn er mit den folgenden Zeichen wieder geschlossen wird: -->
     <circle r="50" cx="100" cy="100" fill="black"></circle>
 </svg>
