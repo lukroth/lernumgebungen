@@ -18,7 +18,7 @@
     der Kreisfläche beschrieben werden. Damit die Kreisbeschreibung als SVG erkannt wird, muss der Kreis von einem SVG
     Tag umschlossen werden. So weiss der Computer, dass nun SVG Elemente folgen. Hier ein Beispiel:
 <div class="exercise" data-title="Kreisfarbe"
-     data-description="Ein Kreis wird in SVG durch den TAG 'circle' definiert. Danach folgen in beliebiger Reihenfolge die Attribute Radius (r), X-Koordinate (cx) und Y-Koordinate (cy) des Mittelpunkts.
+     data-description="Ein Kreis wird in SVG durch den TAG 'circle' definiert. Danach folgen in beliebiger Reihenfolge die Attribute Radius (r), x-Koordinate (cx) und y-Koordinate (cy) des Mittelpunkts.
 
         Ändere die Farbe des Kreises zu grün."
      data-src="svg/circle_1.svg"
@@ -39,7 +39,7 @@
 <div class="exercise" data-title="Kreisposition"
      data-description="Änderen Sie die Position des Kreises, so dass er rechts unten im Bild ist statt links oben.
 
-        Achtung: Das Koordinatensystem ist bei SVG so, dass die Y-Koordinate nach unten statt nach oben zeigt. Der Nullpunkt ist also links oben im Bild!"
+        Achtung: Das Koordinatensystem ist bei SVG so, dass die y-Koordinate nach unten statt nach oben zeigt. Der Nullpunkt ist also links oben im Bild!"
      data-src="svg/circle_3_position.svg"
      data-solution="true"></div>
 <div class="exercise" data-title="Weitere Kreisattribute"
@@ -80,7 +80,7 @@
      data-solution="false"></div>
 
 <div class="exercise" data-title="Ellipse"
-     data-description="Eine Ellipse ähnelt einem Kreis, hat im Gegensatz dazu aber unterschiedliche Radien in X- und Y-Richtung:"
+     data-description="Eine Ellipse ähnelt einem Kreis, hat im Gegensatz dazu aber unterschiedliche Radien in x- und y-Richtung:"
      data-src="svg/elipse.svg"
      data-solution="false"></div>
 
@@ -100,7 +100,7 @@
 <h2>Kapitel 2: Animationen</h2>
 <p>Hinweis: Es dauert teilweise ein wenig, bis die nun vorgestellten Animationen sich anfangen zu bewegen. Das ist in Ordnung und liegt am Browser (Chrome / Edge / Safari / ...) und nicht am Code. Haben Sie einfach ein wenig Geduld beim Programmieren.</p>
 <div class="exercise" data-title="Kreis Animation"
-     data-description="SVG Elemente können animiert werden. Dazu muss spezifiziert werden, welches Attribut von welchem Element animiert werden soll. Im Beispiel wird die X-Koordinate des Kreises (Attribut cx) und gleichzeitig auch noch der Radius (Attribut r) animiert.
+     data-description="SVG Elemente können animiert werden. Dazu muss spezifiziert werden, welches Attribut von welchem Element animiert werden soll. Im Beispiel wird die x-Koordinate des Kreises (Attribut cx) und gleichzeitig auch noch der Radius (Attribut r) animiert.
 
      Passen Sie das Beispiel so an, dass der Kreis von rechts nach links fliegt. Weiter soll der Hintergrund Blau sein. (Tipp: Fügen Sie ganz am Anfang ein sehr grosses, blaues Rechteck hinzu, dass als Hintergrund dient.)"
      data-src="svg/animation_circle.svg"
@@ -152,7 +152,7 @@
 
 
 <h2>Kapitel 4: SVG Code via Python Code generieren</h2>
-<p>Wenn Sie sehr viele SVG Elemente erstellen möchten, z.B. eine Fensterfront eines Hochausses, dann müssen Sie häufig SVG Elemente Kopieren und jeweils nur z.B. die X-Koordinate anpassen. Damit das nicht von Hand gemacht werden muss, ist es möglich, Python Code zu schreiben, der das für einen erledigt.
+<p>Wenn Sie sehr viele SVG Elemente erstellen möchten, z.B. eine Fensterfront eines Hochausses, dann müssen Sie häufig SVG Elemente Kopieren und jeweils nur z.B. die x-Koordinate anpassen. Damit das nicht von Hand gemacht werden muss, ist es möglich, Python Code zu schreiben, der das für einen erledigt.
 Das Ziel dieses Kapitels ist es also, Python Code zu schreiben, der SVG Code generiert. Dieser generierte SVG Code kann danach kopiert und verwendet werden.
 
     Hier ein Beispielcode, der SVG Code (Rechtecke) generiert:
