@@ -1,6 +1,6 @@
 <svg width="500" height="200">
-    <!-- Wir definieren uns hier unser smiley,
-    damit wir es weiter unten verwenden können -->
+    <!-- Wir definieren hier unser Smiley,
+    damit wir es weiter unten verwenden können. -->
     <symbol id="smiley">
         <!-- Hintergrund -->
         <circle cx="50" cy="50" r="48" fill="yellow"/>
@@ -13,6 +13,6 @@
     </symbol>
     <!-- Hier können wir nun unser Smiley verwenden:-->
     <use href="#smiley" x="0" y="0"></use>
-    <!-- und zwar gleich mehrmals wenn wir möchten:-->
+    <!-- und zwar gleich mehrmals nacheinander, wenn wir möchten:-->
     <use href="#smiley" x="100" y="0"></use>
 </svg>
