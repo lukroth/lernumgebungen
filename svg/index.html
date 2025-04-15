@@ -174,11 +174,11 @@
      data-solution="true"></div>
 
 <div class="exercise" data-title="Rotierende Animation"
-     data-description="Eine Gruppe von Elementen kann als ganzes ebenfalls animiert werden. Hier möchten wir eine neue Form der Animation illustrieren: Elemente um einen Mittelpunkt kreisen lassen.
+     data-description="Eine Gruppe von Elementen kann als Ganzes ebenfalls animiert werden. Hier möchten wir eine neue Form der Animation anschauen: Elemente um einen Mittelpunkt kreisen lassen.
 
-     Dazu bekommt die Gruppe zuerst via das id Attribut einen Namen, hier z.B. 'sun'. Danach nutzen wir animateTransform, um dieses Gruppenelement um den Mittelpunkt (250/250) kreisen zu lassen, und zwar von 0 bis 360 Grad.
+     Die Gruppe geben wir zuerst mit dem <i>id</i>-Attribut einen Namen, hier z.B. 'sun'. Danach nutzen wir animateTransform, um dieses Gruppenelement um den Mittelpunkt (250/250) kreisen zu lassen, und zwar von 0 bis 360 Grad.
 
-     Passen Sie den Code so an, dass der Rotationsmittelpunkt neu unten in der Mitte des SVGs ist. So sieht es danach aus, als würde eine Sonne auf und wieder unter gehen."
+     Passen Sie den Code so an, dass der Rotationsmittelpunkt neu unten in der Mitte des SVGs ist. Sie müssen zudem bei der Kreisdefinition cy anpassen, damit der Kreis weiter unten auf der Leinwand definiert wird. Die Lösung sollte dann so aussehen, als würde eine Sonne auf- und wieder untergehen."
      data-src="svg/group_sun_animated_animatetransform.svg"
      data-solution="true"></div>
 
@@ -188,11 +188,11 @@
 
 
 
-<h2>Kapitel 4: SVG Code via Python Code generieren</h2>
-<p>Wenn Sie sehr viele SVG Elemente erstellen möchten, z.B. eine Fensterfront eines Hochausses, dann müssen Sie häufig SVG Elemente Kopieren und jeweils nur z.B. die x-Koordinate anpassen. Damit das nicht von Hand gemacht werden muss, ist es möglich, Python Code zu schreiben, der das für einen erledigt.
+<h2>Kapitel 4: SVG Code mit Python Code generieren</h2>
+<p>Wenn Sie sehr viele SVG Elemente erstellen möchten, z.B. eine Fensterfront eines Hochhauses, dann müssen Sie viele sehr ähnliche SVG Elemente kopieren und jeweils nur z.B. die x-Koordinate anpassen. Damit Sie dies nicht von Hand machen müssen, ist es möglich, Python Code zu schreiben, der das für Sie erledigt.
 Das Ziel dieses Kapitels ist es also, Python Code zu schreiben, der SVG Code generiert. Dieser generierte SVG Code kann danach kopiert und verwendet werden.
 
-    Hier ein Beispielcode, der SVG Code (Rechtecke) generiert:
+    Hier ein Beispielcode, der SVG Code für Rechtecke generiert:
 </p>
 
 <!-- Use https://docs.webtigerpython.ethz.ch/url-arguments.html to create a link from this code:
@@ -210,7 +210,7 @@ while i < 20:
 </iframe>
 
 <div class="exercise" data-title="Python Code um SVG Code zu generieren"
-     data-description="Lassen Sie den obigen Code laufen, indem Sie auf den grünen Knopf drücken. Kopieren Sie den generierten SVG Code in diese Vorlage und versuchen Sie zu verstehen, weshalb dieser nun kopierte SVG Code generiert wurde und weshalb das Sinn ergeben kann, das zu nutzen."
+     data-description="Lassen Sie den obigen Code laufen, indem Sie auf den grünen Knopf drücken. Kopieren Sie den generierten SVG Code in diese Vorlage und versuchen Sie zu verstehen, was das Python Programm genau gemacht hat und wieso es sinnvoll ist, für diese Art von SVG Code ein Python Programm zu  nutzen."
      data-src="svg/python_code_for_svg_code.svg"
      data-solution="true"></div>
 </body>
