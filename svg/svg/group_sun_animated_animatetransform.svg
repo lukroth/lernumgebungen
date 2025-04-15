@@ -7,8 +7,8 @@
   </g>
 
   <!-- Animation für die Rotation -->
-  <!-- from= Grad, X Mittelpunkt, Y Mittelpunkt -->
-  <!-- to= Grad, X Mittelpunkt, Y Mittelpunkt -->
+  <!-- from(Grad, X-Mittelpunkt, Y-Mittelpunkt) -->
+  <!-- to(Grad, X-Mittelpunkt, Y-Mittelpunkt) -->
   <animateTransform
       xlink:href="#sun"
       attributeName="transform"
