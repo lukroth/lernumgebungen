@@ -103,7 +103,7 @@ async function initExercises() {
                     });
             } else {
                 solutionContainer.style.display = 'none';
-                solutionButton.textContent = "Lösung Anzeigen";
+                solutionButton.textContent = "Lösung anzeigen";
             }
         });
 
