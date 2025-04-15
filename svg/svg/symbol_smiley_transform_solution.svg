@@ -1,0 +1,14 @@
+<svg width="500" height="250">
+    <symbol id="smiley">
+        <!-- Hintergrund -->
+        <circle cx="50" cy="50" r="48" fill="yellow"/>
+        <!-- Mund -->
+        <circle cx="50" cy="50" r="40" fill="black"/>
+        <circle cx="50" cy="48" r="40.1" fill="yellow"/>
+        <!-- Augen -->
+        <circle cx="30" cy="30" r="10" fill="black"/>
+        <circle cx="70" cy="30" r="10" fill="black"/>
+    </symbol>
+    <use href="#smiley" x="0" y="0"></use>
+    <use href="#smiley" x="100" y="0" transform="rotate(180 175 105) scale(0.5)"></use>
+</svg>
