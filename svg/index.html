@@ -95,9 +95,43 @@
 
 
 
+<h2>Kapitel 2: Elemente zusammenfassen und transformieren</h2>
+<p>Bisher haben Sie gelernt, wie Sie einzelne SVG Elemente beschreiben können. Wenn Sie kompliziertere Figuren zeichnen
+    möchten, lohnt es sich, diese zusammenzufassen. Dazu gibt es verschiedene Möglichkeiten, welche Sie in diesem Kapitel
+    kennenlernen werden. Zudem schauen Sie sich an, wie Sie SVG Elemente beliebig transformieren können, um die Elemente
+    genau so darzustellen, wie Sie es möchten.
+<div class="exercise" data-title="Gruppe bilden"
+     data-description="Es gibt zwei Arten, um mehrere SVG Elemente zusammenzufassen. Die erste Art ist der 'group' Tag.
+
+     Im Beispiel unten sehen Sie zwei Kreise, welche zu einer Gruppe zusammengefasst wurden. Alle Elemente, die sich innerhalb des TAG 'g' befinden, gehören zur Gruppe dazu.
+
+     Fügen Sie weitere rechts mit dem gleichen Abstand einen dritten roten Kreis der Gruppe hinzu."
+     data-src="svg/group_circles.svg"
+     data-solution="true"></div>
+
+<div class="exercise" data-title="Gruppe rotieren"
+     data-description="TODO rotieren"
+     data-src="svg/group_circles.svg"
+     data-solution="false"></div>
 
 
-<h2>Kapitel 2: Animationen</h2>
+<div class="exercise" data-title="Komplexe Figur wiederverwenden und animieren: Symbol TAG"
+     data-description="Eine Komplexe Figur kann aus mehreren SVG Elementen bestehen. In diesem Beispiel wird ein Smiley aus mehreren Kreisen erstellt. Wenn man dieses Smiley nun mehrmals anzeigen und animieren möchte, dann kann man das, indem man das Smiley in einem Symbol Tag speichert.
+
+     Schauen Sie sich das folgende Beispiel an und versuchen Sie, den Code zu verstehen.
+
+     <h5>Aufgaben:</h5>
+     A) Was passiert, wenn Sie die Zeilen 15 und 17 weglöschen? Das Smiley sollte verschwinden, da das Symbol selbst nur das Smiley definiert, es aber nicht anzeigt. Analog zu einer Python Funktion, die mittels def nur definiert wird, aber nicht aufgerufen.
+     B) Passen Sie den Code so an,dass noch zwei weitere Smileys zu sehen sind.
+
+TODO Im Unterschied zum symbol group tag erscheinen die Elemente aber nicht direkt und es braucht ein use!"
+     data-src="svg/symbol_smiley.svg"
+     data-solution="true"></div>
+
+
+
+
+<h2>Kapitel 3: Animationen</h2>
 <p>Hinweis: Es dauert teilweise ein wenig, bis die nun vorgestellten Animationen sich anfangen zu bewegen. Das ist in Ordnung und liegt am Browser (Chrome / Edge / Safari / ...) und nicht am Code. Haben Sie einfach ein wenig Geduld beim Programmieren.</p>
 <div class="exercise" data-title="Kreis Animation"
      data-description="SVG Elemente können animiert werden. Dazu muss spezifiziert werden, welches Attribut von welchem Element animiert werden soll. Im Beispiel wird die x-Koordinate des Kreises (Attribut cx) und gleichzeitig auch noch der Radius (Attribut r) animiert.
@@ -106,35 +140,10 @@
      data-src="svg/animation_circle.svg"
      data-solution="true"></div>
 
-
-
-
-
-<h2>Kapitel 3: Elemente zusammenfassen</h2>
-<div class="exercise" data-title="Komplexe Figur wiederverwenden und animieren: Symbol TAG"
-     data-description="Eine Komplexe Figur kann aus mehreren SVG Elementen bestehen. In diesem Beispiel wird ein Smiley aus mehreren Kreisen erstellt. Wenn man dieses Smiley nun mehrmals anzeigen und animieren möchte, dann kann man das, indem man das Smiley in einem Symbol Tag speichert.
-
-     Schauen Sie sich das folgende Beispiel an und versuchen Sie, den Code zu verstehen.
-
-     <h5>Aufgaben:</h5>
-     A) Was passiert, wenn Sie die Zeilen 15 und 17 weglöschen? Das Smiley sollte verschwinden, da das Symbol selbst nur das Smiley definiert, es aber nicht anzeigt. Analog zu einer Python Funktion, die mittels def nur definiert wird, aber nicht aufgerufen.
-     B) Passen Sie den Code so an,dass noch zwei weitere Smileys zu sehen sind."
-     data-src="svg/symbol_smiley.svg"
-     data-solution="true"></div>
-
 <div class="exercise" data-title="Smiley Animation"
      data-description="Animieren Sie das SVG Smiley, indem sie die x-Koordinate des gesamten Smileys animieren. Dies können Sie, indem sie das x Attribut der use-Zeile (Zeile 12) animieren, analog zur früheren Animation mit dem Kreis."
      data-src="svg/symbol_smiley_animiert.svg"
      data-solution="true"></div>
-
-<div class="exercise" data-title="Group TAG"
-     data-description="Der Group Tag (&lt;g&gt;) in SVG ermöglicht es, mehrere Elemente zu einer Gruppe zusammenzufassen, sodass sie gemeinsam transformiert, gestylt oder animiert werden können. Im Unterschied zum symbol Tag erscheinen die Elemente aber direkt und es braucht kein use mehr!
-
-     In diesem Beispiel werden mehrere Kreise zu einer Gruppe zusammengefasst. Diese können nun direkt zusammen verschoben werden via das transform im group Tag.
-
-     Ändern Sie die Zahlen in Zeile 2 und verstehen Sie so den translate Befehl."
-     data-src="svg/group_circles.svg"
-     data-solution="false"></div>
 
 <div class="exercise" data-title="Rotierende Animation"
      data-description="Eine Gruppe von Elementen kann als ganzes ebenfalls animiert werden. Hier möchten wir eine neue Form der Animation illustrieren: Elemente um einen Mittelpunkt kreisen lassen.
