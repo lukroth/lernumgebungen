@@ -8,6 +8,10 @@
     <script src="myscripts.js"></script>
 </head>
 <body>
+<!-- Naming Conventions:
+Tags mit Anführungszeichen: z.B.: 'rect'
+Attribute und Zusätze von Attributen kursiv: z.B.:  <i>transform</i>-Attribut, <i>translate(X Y)</i>
+-->
 <h1>SVG Tutorial</h1>
 
 <h2>Kapitel 1: Grundelemente</h2>
@@ -18,7 +22,7 @@
     der Kreisfläche beschrieben werden. Damit die Kreisbeschreibung als SVG erkannt wird, muss der Kreis von einem SVG
     Tag umschlossen werden. So weiss der Computer, dass nun SVG Elemente folgen. Hier ein Beispiel:
 <div class="exercise" data-title="Kreisfarbe"
-     data-description="Ein Kreis wird in SVG durch den Tag 'circle' definiert. Der Begriff <i>Tag</i> kommt aus dem Englisch und bedeutet auf Deutsch Etikett. Danach folgen in beliebiger Reihenfolge die Attribute Radius (r), x-Koordinate (cx) und y-Koordinate (cy) des Mittelpunkts.
+     data-description="Ein Kreis wird in SVG durch den Tag 'circle' definiert. Der Begriff <i>Tag</i> kommt aus dem Englisch und bedeutet auf Deutsch Etikett. Danach folgen in beliebiger Reihenfolge die Attribute Radius <i>r</i>, x-Koordinate <i>cx</i> und y-Koordinate <i>cy</i> des Mittelpunkts.
 
         Ändere die Farbe des Kreises zu grün."
      data-src="svg/circle_1.svg"
@@ -101,9 +105,9 @@
     kennenlernen werden. Zudem schauen Sie sich an, wie Sie SVG Elemente beliebig transformieren können, um die Elemente
     genau so darzustellen, wie Sie es möchten.
 <div class="exercise" data-title="Gruppe bilden"
-     data-description="Es gibt zwei Arten, um mehrere SVG Elemente zusammenzufassen. Die erste Art ist der 'group' Tag.
+     data-description="Es gibt zwei Arten, um mehrere SVG Elemente zusammenzufassen. Die erste Art ist der Group Tag.
 
-     Im Beispiel unten sehen Sie zwei Kreise, welche zu einer Gruppe zusammengefasst wurden. Alle Elemente, die sich innerhalb des Tag G 'g' befinden, gehören zur Gruppe dazu.
+     Im Beispiel unten sehen Sie zwei Kreise, welche zu einer Gruppe zusammengefasst wurden. Alle Elemente, die sich innerhalb des Tag 'g' befinden, gehören zur Gruppe dazu.
 
      Fügen Sie weitere rechts mit dem gleichen Abstand einen dritten roten Kreis der Gruppe hinzu."
      data-src="svg/group_circles.svg"
@@ -133,12 +137,12 @@
      data-solution="true"></div>
 
 <div class="exercise" data-title="Transformationen kombinieren"
-     data-description="Die drei Transformationsarten rotieren, skalieren und verschieben können Sie auch miteinander verbinden und gleichzeitig auf eine Gruppe oder ein Element anwenden. Dabei wird zuerst das angewendet, was ganz rechts steht (hier 'translate(30 30)'), danach das nächste von rechts gelesene (hier 'scale(2)') usw."
+     data-description="Die drei Transformationsarten rotieren, skalieren und verschieben können Sie auch miteinander verbinden und gleichzeitig auf eine Gruppe oder ein Element anwenden. Dabei wird zuerst das angewendet, was ganz rechts steht (hier <i>translate(30 30)</i>), danach das nächste von rechts gelesene (hier <i>scale(2)</i>) usw."
      data-src="svg/transform.svg"
      data-solution="false"></div>
 
 <div class="exercise" data-title="Komplexe Figur wiederverwenden"
-     data-description="Eine komplexe Figur kann aus mehreren SVG Elementen bestehen. In diesem Beispiel wird ein Smiley aus mehreren Kreisen erstellt. Wenn wir dieses Smiley nun mehrmals anzeigen oder gar animieren möchten, können wir dies, indem wir das Smiley in einem <i>symbol</i> Tag speichern.
+     data-description="Eine komplexe Figur kann aus mehreren SVG Elementen bestehen. In diesem Beispiel wird ein Smiley aus mehreren Kreisen erstellt. Wenn wir dieses Smiley nun mehrmals anzeigen oder gar animieren möchten, können wir dies, indem wir das Smiley in einem 'symbol' Tag speichern.
 
      Schauen Sie sich das folgende Beispiel an und versuchen Sie, den Code zu verstehen.
 
@@ -150,11 +154,11 @@
      data-solution="true"></div>
 
 <div class="exercise" data-title="Komplexe Figur transformieren"
-     data-description="Die zuvor gelernten Transformationen können Sie ebenfalls auf komplexe Figuren anwenden, welche Sie mit dem <i>symbol</i> Tag definiert haben. Dazu fügen Sie beim Aufrufen des Symbols das Attribut <i>transform</i> hinzu.
+     data-description="Die zuvor gelernten Transformationen können Sie ebenfalls auf komplexe Figuren anwenden, welche Sie mit dem 'symbol' Tag definiert haben. Dazu fügen Sie beim Aufrufen des Symbols das Attribut <i>transform</i> hinzu.
 
         Fügen Sie ein zweites Smiley ein, welches halb so gross ist wie das erste und auf dem Kopf steht.
 
-        Tipp: Fügen sie das 'transform' Attribut zum 'use' TAG hinzu und nicht zum 'symbol' Tag"
+        Tipp: Fügen Sie das <i>transform</i> Attribut zum 'use' Tag hinzu und nicht zum 'symbol' Tag"
 
      data-src="svg/symbol_smiley_transform.svg"
      data-solution="true"></div>
@@ -164,21 +168,21 @@
 <h2>Kapitel 3: Animationen</h2>
 <p>Hinweis: Es braucht teilweise ein paar Sekunden, bis sich die nun vorgestellten Animationen beginnen zu bewegen. Das ist in Ordnung und liegt am Browser (Chrome / Edge / Safari / ...) und nicht am Code. Haben Sie einfach ein wenig Geduld beim Programmieren.</p>
 <div class="exercise" data-title="Kreis Animation"
-     data-description="SVG Elemente können animiert werden. Dazu muss spezifiziert werden, welches Attribut von welchem Element animiert werden soll. Im Beispiel wird die x-Koordinate des Kreises (Attribut cx) und gleichzeitig auch noch der Radius (Attribut r) animiert.
+     data-description="SVG Elemente können animiert werden. Dazu muss spezifiziert werden, welches Attribut von welchem Element animiert werden soll. Im Beispiel wird die x-Koordinate des Kreises (Attribut <i>cx</i>) und gleichzeitig auch noch der Radius (Attribut <i>r</i>) animiert.
 
      Studieren Sie zuerst den Code. Passen Sie danach das Beispiel so an, dass der Kreis von rechts nach links fliegt. Zudem soll der Hintergrund blau sein. (Tipp: Fügen Sie ganz am Anfang ein sehr grosses, blaues Rechteck hinzu, welches als Hintergrund dient.)"
      data-src="svg/animation_circle.svg"
      data-solution="true"></div>
 
 <div class="exercise" data-title="Smiley Animation"
-     data-description="Animieren Sie das SVG Smiley, indem sie die x-Koordinate des gesamten Smileys animieren. Dies können Sie tun, indem sie das <i>x</i>-Attribut der <i>use</i>-Zeile (Zeile 12) animieren, analog zur vorhergehenden Animation mit dem Kreis."
+     data-description="Animieren Sie das SVG Smiley, indem sie die x-Koordinate des gesamten Smileys animieren. Dies können Sie tun, indem sie das <i>x</i>-Attribut der 'use'-Zeile (Zeile 12) animieren, analog zur vorhergehenden Animation mit dem Kreis."
      data-src="svg/symbol_smiley_animiert.svg"
      data-solution="true"></div>
 
 <div class="exercise" data-title="Rotierende Animation"
      data-description="Eine Gruppe von Elementen kann als Ganzes ebenfalls animiert werden. Hier möchten wir eine neue Form der Animation anschauen: Elemente um einen Mittelpunkt kreisen lassen.
 
-     Die Gruppe geben wir zuerst mit dem <i>id</i>-Attribut einen Namen, hier z.B. 'sun'. Danach nutzen wir animateTransform, um dieses Gruppenelement um den Mittelpunkt (250/250) kreisen zu lassen, und zwar von 0 bis 360 Grad.
+     Die Gruppe geben wir zuerst mit dem <i>id</i>-Attribut einen Namen, hier z.B. 'sun'. Danach nutzen wir 'animateTransform', um dieses Gruppenelement um den Mittelpunkt (250/250) kreisen zu lassen, und zwar von 0 bis 360 Grad.
 
      Sonnenaufgang und -untergang:
      Passen Sie den Code so an, dass der Rotationsmittelpunkt neu unten in der Mitte des SVGs ist. Sie müssen zudem bei der Kreisdefinition cy anpassen, damit der Kreis weiter unten auf der Leinwand definiert wird. Die Lösung sollte dann so aussehen, als würde eine Sonne auf- und wieder untergehen."
